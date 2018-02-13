@@ -2,6 +2,7 @@
 
 A demo web server application using the [vibe.d web framework](https://vibed.org) written in [D](https://dlang.org). It uses `dlang2/dmd-ubuntu` as base image. You can find the based image repository at https://github.com/dlang/dmd.
 
+> **NOTE**: If you are running Ubuntu or any Ubuntu-based Linux distribution, prefix the docker commands shown below with `sudo`.
 
 ## Building Application Image
 You must have docker installed on your system. Whilst in the project root, run `docker build -t TAGNAME .` to build. 
