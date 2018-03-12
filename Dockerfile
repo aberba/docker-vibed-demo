@@ -14,6 +14,9 @@ RUN apt-get install libssl-dev libevent-dev -y
 RUN useradd --user-group --create-home --shell /bin/false app
 USER app
 
+# Change permission /app folder
+RUN chown -R app:app /app && chmod -R 755 /app
+
 # Build project
 RUN dub build
 
